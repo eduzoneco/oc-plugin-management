@@ -1,0 +1,6 @@
+plugin:
+    name: 'eduzoneco.management::lang.plugin.name'
+    description: 'eduzoneco.management::lang.plugin.description'
+    author: eduzoneco
+    icon: oc-icon-adjust
+    homepage: ''
