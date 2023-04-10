@@ -4,3 +4,13 @@ plugin:
     author: eduzoneco
     icon: oc-icon-adjust
     homepage: ''
+navigation:
+    main-menu-item:
+        label: CURSOS
+        url: /
+        icon: icon-book
+        sideMenu:
+            side-menu-item:
+                label: 'COURSE CATEGORY'
+                url: eduzoneco/management/coursecategories
+                icon: icon-sitemap

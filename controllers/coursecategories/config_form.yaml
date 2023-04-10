@@ -1,0 +1,10 @@
+name: CourseCategories
+form: $/eduzoneco/management/models/coursecategory/fields.yaml
+modelClass: Eduzoneco\Management\Models\CourseCategory
+defaultRedirect: eduzoneco/management/coursecategories
+create:
+    redirect: 'eduzoneco/management/coursecategories/update/:id'
+    redirectClose: eduzoneco/management/coursecategories
+update:
+    redirect: eduzoneco/management/coursecategories
+    redirectClose: eduzoneco/management/coursecategories
