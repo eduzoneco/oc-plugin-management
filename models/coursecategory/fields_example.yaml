@@ -1,0 +1,121 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    description:
+        label: Description
+        span: auto
+        type: text
+    _gender:
+        type: balloon-selector
+        label: Gender
+        options:
+            female: Female
+            male: Male    
+    permissions:
+        label: Permissions
+        type: checkboxlist
+        options:
+            open_account: Open account
+            close_account: Close account
+            modify_account: Modify account
+    show_content:
+        label: Display Content
+        type: switch
+        default: true       
+    show_content2:
+        label: Display Content
+        type: switch
+        comment: Flick this switch to display content
+    css_content:
+        type: codeeditor
+        size: huge
+        language: html
+    color:
+        label: Background
+        type: colorpicker
+
+    data:
+        type: datatable
+        adding: true
+        deleting: true
+        columns: []
+        recordsPerPage: false
+        searching: false    
+
+    published_at:
+        label: Published
+        type: datepicker
+        span: auto
+        mode: date    
+    avatar:
+        label: Avatar
+        type: fileupload
+        mode: image
+        imageHeight: 260
+        imageWidth: 260
+    md_content:
+        type: markdown
+        size: huge  
+    whitepaper_file:
+        label: Whitepaper PDF
+        type: mediafinder
+    content:
+        type: nestedform
+        showPanel: true
+        form:
+            fields:
+                added_at:
+                    label: Date added
+                    type: datepicker
+                details:
+                    label: Details
+                    type: textarea
+                title:
+                    label: This the title
+                    type: text        
+    extra_information:
+        type: repeater
+        form:
+            fields:
+                added_at:
+                    label: Date added
+                    type: date
+                details:
+                    label: Details
+                    type: textarea
+    html_content:
+        type: richeditor
+        size: huge
+    featured_page:
+        label: Featured Page
+        type: pagefinder
+    api_secret:
+        type: sensitive
+        allowCopy: false
+        hideOnTabChange: false
+    tags:
+        type: taglist
+        separator: space
+    _section1:
+        type: section
+        label: User details
+        comment: This section contains details about the user.    
+    _tip1:
+        type: hint
+        mode: warning
+        label: Pro Tip
+        comment: Always check to make sure this field is populated. 
+        span: row
+        cssClass: col-md-4 
+    _ruler1:
+        type: ruler    
+    content2:
+        type: partial
+        path: ~/plugins/eduzoneco/management/models/coursecategory/_mypartial.htm
+
+                    
+        
+     
+         

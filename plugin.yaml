@@ -6,11 +6,11 @@ plugin:
     homepage: ''
 navigation:
     main-menu-item:
-        label: CURSOS
+        label: eduzoneco.management::lang.navigation.parent
         url: /
         icon: icon-book
         sideMenu:
-            side-menu-item:
-                label: 'COURSE CATEGORY'
+            coursecategory:
+                label: eduzoneco.management::lang.navigation.coursecategory
                 url: eduzoneco/management/coursecategories
                 icon: icon-sitemap

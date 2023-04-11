@@ -24,4 +24,7 @@ class CourseCategory extends Model
      */
     public $rules = [
     ];
+    public $attachMany = [
+        "avatar" => 'system\models\file'
+    ];
 }
