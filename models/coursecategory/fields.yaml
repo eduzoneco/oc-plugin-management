@@ -1,9 +1,25 @@
 fields:
     name:
         label: Name
-        span: auto
+        span: row
         type: text
+        spanClass: col-4
+    _spacer1:
+        label: spacer1
+        span: row
+        type: text
+        disabled: true
+        cssClass: invisible
+        spanClass: col-8
     description:
         label: Description
+        type: textarea
         span: auto
-        type: text
+        spanClass: col-3
+        
+
+
+                    
+        
+     
+         
