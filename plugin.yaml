@@ -6,11 +6,15 @@ plugin:
     homepage: ''
 navigation:
     main-menu-item:
-        label: eduzoneco.management::lang.navigation.parent
+        label: 'eduzoneco.management::lang.navigation.parent'
         url: /
         icon: icon-book
         sideMenu:
             coursecategory:
-                label: eduzoneco.management::lang.navigation.coursecategory
+                label: 'eduzoneco.management::lang.navigation.coursecategory'
                 url: eduzoneco/management/coursecategories
                 icon: icon-sitemap
+            side-menu-item:
+                label: COURSES
+                url: eduzoneco/management/courses
+                icon: icon-puzzle-piece

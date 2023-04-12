@@ -1,0 +1,21 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        placeholder: ''
+        default: ''
+        cssClass: ''
+        type: text
+    description:
+        label: Description
+        span: auto
+        placeholder: ''
+        default: ''
+        cssClass: ''
+        type: textarea
+    is_active:
+        label: 'Is active'
+        span: full
+        placeholder: ''
+        cssClass: ''
+        type: checkbox
