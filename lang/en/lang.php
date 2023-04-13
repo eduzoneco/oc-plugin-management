@@ -4,8 +4,9 @@
         'description' => ''
     ],
     'navigation' => [
-        'parent' => 'Classes',
-        'coursecategory' => 'Course Category'
+        'parent' => 'E-learning',
+        'coursecategory' => 'Course Category',
+        'course' => 'Course'
     ],
     'coursecategory' => [
         'form' => [

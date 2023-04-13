@@ -4,6 +4,7 @@
         'description' => ''
     ],
     'navigation' => [
-        'parent' => 'Clases'
+        'parent' => 'Aprendizaje Virtual',
+        'coursecategory' => 'Categoria del curso'
     ]
 ];
