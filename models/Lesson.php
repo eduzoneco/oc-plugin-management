@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class CourseCategory extends Model
+class Lesson extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     
@@ -17,15 +17,11 @@ class CourseCategory extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'eduzoneco_management_coursecategories';
+    public $table = 'eduzoneco_management_lessons';
 
     /**
      * @var array Validation rules
      */
     public $rules = [
     ];
-    public $attachMany = [
-        "avatar" => 'system\models\file'
-    ];
-   
 }

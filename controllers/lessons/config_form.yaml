@@ -1,0 +1,10 @@
+name: Lessons
+form: $/eduzoneco/management/models/lesson/fields.yaml
+modelClass: Eduzoneco\Management\Models\Lesson
+defaultRedirect: eduzoneco/management/lessons
+create:
+    redirect: 'eduzoneco/management/lessons/update/:id'
+    redirectClose: eduzoneco/management/lessons
+update:
+    redirect: eduzoneco/management/lessons
+    redirectClose: eduzoneco/management/lessons
