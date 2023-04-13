@@ -1,20 +1,20 @@
 columns:
     id:
-        label: id
+        label: 'eduzoneco.management::lang.coursecategory.list.id'
         type: number
     name:
-        label: name
+        label: 'eduzoneco.management::lang.coursecategory.list.name'
         type: text
         searchable: true
     description:
-        label: description
+        label: 'eduzoneco.management::lang.coursecategory.list.description'
         type: text
     created_at:
-        label: created_at
+        label: 'eduzoneco.management::lang.general.created_at'
         type: datetime
     updated_at:
-        label: updated_at
+        label: 'eduzoneco.management::lang.general.updated_at'
         type: datetime
     deleted_at:
-        label: deleted_at
+        label: 'eduzoneco.management::lang.general.deleted_at'
         type: datetime

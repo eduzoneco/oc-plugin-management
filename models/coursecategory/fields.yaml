@@ -1,6 +1,6 @@
 fields:
     name:
-        label: Name
+        label: 'eduzoneco.management::lang.coursecategory.form.name'
         span: row
         type: text
         spanClass: col-4
@@ -12,7 +12,7 @@ fields:
         cssClass: invisible
         spanClass: col-8
     description:
-        label: Description
+        label: 'eduzoneco.management::lang.coursecategory.form.description'
         type: textarea
         span: auto
         spanClass: col-3
