@@ -13,5 +13,6 @@ class CourseCategories extends Controller
     public function __construct()
     {
         parent::__construct();
+        BackendMenu::setContext('Eduzoneco.Management', 'main-menu-item', 'coursecategory');
     }
 }

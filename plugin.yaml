@@ -14,7 +14,7 @@ navigation:
                 label: 'eduzoneco.management::lang.navigation.coursecategory'
                 url: eduzoneco/management/coursecategories
                 icon: icon-sitemap
-            side-menu-item:
-                label: COURSES
+            course:
+                label: 'eduzoneco.management::lang.navigation.course'
                 url: eduzoneco/management/courses
                 icon: icon-puzzle-piece
