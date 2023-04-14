@@ -24,4 +24,13 @@ class Course extends Model
      */
     public $rules = [
     ];
+
+    public $belongsToMany = [
+        'coursecategories' => [
+            \eduzoneco\management\models\CourseCategory::class,
+            'table' => 'eduzoneco_management_courses_coursecategories',
+            'key'=>'course_id',
+            'otherKey'=>'coursecategory_id'
+            ]
+    ];
 }
