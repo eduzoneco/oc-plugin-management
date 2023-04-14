@@ -1,0 +1,10 @@
+name: Activities
+form: $/eduzoneco/management/models/activity/fields.yaml
+modelClass: Eduzoneco\Management\Models\Activity
+defaultRedirect: eduzoneco/management/activities
+create:
+    redirect: 'eduzoneco/management/activities/update/:id'
+    redirectClose: eduzoneco/management/activities
+update:
+    redirect: eduzoneco/management/activities
+    redirectClose: eduzoneco/management/activities

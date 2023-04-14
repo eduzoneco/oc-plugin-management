@@ -1,0 +1,30 @@
+fields:
+    lesson_id:
+        label: 'eduzoneco.management::lang.activity.form.lesson_id'
+        span: auto
+        type: number
+    type:
+        label: 'eduzoneco.management::lang.activity.form.type'
+        span: auto
+        type: text
+    title:
+        label: 'eduzoneco.management::lang.activity.form.title'
+        span: auto
+        type: text
+    description:
+        label: 'eduzoneco.management::lang.activity.form.description'
+        size: ''
+        span: full
+        type: textarea
+    difficulty:
+        label: 'eduzoneco.management::lang.activity.form.difficulty'
+        span: auto
+        type: text
+    estimated_duration:
+        label: 'eduzoneco.management::lang.activity.form.estimated_duration'
+        span: auto
+        type: number
+    is_active:
+        label: 'eduzoneco.management::lang.activity.form.is_active'
+        span: auto
+        type: checkbox

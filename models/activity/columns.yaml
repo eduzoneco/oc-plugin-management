@@ -1,0 +1,35 @@
+columns:
+    id:
+        label: 'eduzoneco.management::lang.activity.list.id'
+        type: number
+    lesson_id:
+        label: 'eduzoneco.management::lang.activity.list.lesson_id'
+        type: number
+    type:
+        label: 'eduzoneco.management::lang.activity.list.type'
+        type: text
+    title:
+        label: 'eduzoneco.management::lang.activity.list.title'
+        type: text
+        searchable: true
+    description:
+        label: 'eduzoneco.management::lang.activity.list.description'
+        type: text
+    difficulty:
+        label: 'eduzoneco.management::lang.activity.list.difficulty'
+        type: text
+    estimated_duration:
+        label: 'eduzoneco.management::lang.activity.list.estimated_duration'
+        type: number
+    is_active:
+        label: 'eduzoneco.management::lang.activity.list.is_active'
+        type: text
+    created_at:
+        label: 'eduzoneco.management::lang.general.created_at'
+        type: datetime
+    updated_at:
+        label: 'eduzoneco.management::lang.general.updated_at'
+        type: datetime
+    deleted_at:
+        label: 'eduzoneco.management::lang.general.deleted_at'
+        type: datetime

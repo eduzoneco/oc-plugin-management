@@ -22,3 +22,7 @@ navigation:
                 label: 'eduzoneco.management::lang.navigation.lesson'
                 url: eduzoneco/management/lessons
                 icon: icon-list
+            activity:
+                label: 'eduzoneco.management::lang.navigation.activity'
+                url: eduzoneco/management/activities
+                icon: icon-list-alt
