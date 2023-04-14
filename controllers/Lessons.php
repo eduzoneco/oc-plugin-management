@@ -13,6 +13,6 @@ class Lessons extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Eduzoneco.Management', 'main-menu-item');
+        BackendMenu::setContext('Eduzoneco.Management', 'main-menu-item','lesson');
     }
 }
