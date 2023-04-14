@@ -1,9 +1,4 @@
 fields:
-    course_id:
-        label: 'eduzoneco.management::lang.lesson.form.courseid'
-        span: left
-        placeholder: ''
-        type: number
     title:
         label: 'eduzoneco.management::lang.lesson.form.title'
         span: auto
@@ -24,3 +19,6 @@ fields:
         label: 'Is active'
         span: auto
         type: checkbox
+    course:
+        label: Categories
+        type: relation
