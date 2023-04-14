@@ -41,7 +41,7 @@
             'id' => 'Id',
             'title' => 'Title',
             'description' => 'Description',
-            'contentl'=> 'Content'
+            'content'=> 'Content'
         ]
     ]
 ];
