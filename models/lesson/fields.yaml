@@ -24,3 +24,6 @@ fields:
         label: 'Is active'
         span: auto
         type: checkbox
+    course:
+        label: Categories
+        type: relation
