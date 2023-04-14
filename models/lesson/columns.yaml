@@ -3,7 +3,7 @@ columns:
         label: 'eduzoneco.management::lang.lesson.list.id'
         type: number
     course_id:
-        label: 'eduzoneco.management::lang.lesson.list.courseidl'
+        label: 'eduzoneco.management::lang.lesson.list.courseid'
         type: number
         searchable: true
     title:
@@ -14,7 +14,7 @@ columns:
         label: 'eduzoneco.management::lang.lesson.list.description'
         type: text
     content:
-        label: 'eduzoneco.management::lang.lesson.list.contentl'
+        label: 'eduzoneco.management::lang.lesson.list.content'
         type: text
     is_active:
         label: 'eduzoneco.management::lang.general.is_active'
