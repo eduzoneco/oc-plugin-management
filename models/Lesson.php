@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class Course extends Model
+class Lesson extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     
@@ -17,20 +17,14 @@ class Course extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'eduzoneco_management_courses';
+    public $table = 'eduzoneco_management_lessons';
 
     /**
      * @var array Validation rules
      */
     public $rules = [
     ];
-
-    public $belongsToMany = [
-        'coursecategories' => [
-            \eduzoneco\management\models\CourseCategory::class,
-            'table' => 'eduzoneco_management_courses_coursecategories',
-            'key'=>'course_id',
-            'otherKey'=>'coursecategory_id'
-            ]
+    public $belongsTo = [//va a buscar modelo en este caso course y _id
+        'course' => [\eduzoneco\management\models\Course::class]
     ];
 }

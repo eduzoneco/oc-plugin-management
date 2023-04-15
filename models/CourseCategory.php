@@ -27,4 +27,5 @@ class CourseCategory extends Model
     public $attachMany = [
         "avatar" => 'system\models\file'
     ];
+   
 }

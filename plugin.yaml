@@ -18,3 +18,7 @@ navigation:
                 label: 'eduzoneco.management::lang.navigation.course'
                 url: eduzoneco/management/courses
                 icon: icon-puzzle-piece
+            lesson:
+                label: 'eduzoneco.management::lang.navigation.lesson'
+                url: eduzoneco/management/lessons
+                icon: icon-list

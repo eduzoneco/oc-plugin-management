@@ -11,3 +11,6 @@ fields:
         label: 'Is active'
         span: full
         type: checkbox
+    coursecategories:
+        label: Categories
+        type: relation

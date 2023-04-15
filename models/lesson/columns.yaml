@@ -1,0 +1,26 @@
+columns:
+    title:
+        label: 'eduzoneco.management::lang.lesson.list.title'
+        type: text
+        searchable: true
+    description:
+        label: 'eduzoneco.management::lang.lesson.list.description'
+        type: text
+    content:
+        label: 'eduzoneco.management::lang.lesson.list.content'
+        #type: text
+        type: summary
+        limitWords: 20
+        endChars: "..."
+    is_active:
+        label: 'eduzoneco.management::lang.general.is_active'
+        type: switch
+    created_at:
+        label: 'eduzoneco.management::lang.general.created_at'
+        type: timesince
+    updated_at:
+        label: 'eduzoneco.management::lang.general.updated_at'
+        type: timesince
+    deleted_at:
+        label: 'eduzoneco.management::lang.general.deleted_at'
+        type: timesince

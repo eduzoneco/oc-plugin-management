@@ -1,0 +1,26 @@
+fields:
+    course:
+        label: 'eduzoneco.management::lang.lesson.form.course_label'
+        type: relation
+        placeholder: 'eduzoneco.management::lang.lesson.form.course_placeholder'
+    title:
+        label: 'eduzoneco.management::lang.lesson.form.title'
+        span: auto
+        type: text
+    description:
+        label: 'eduzoneco.management::lang.lesson.form.description'
+        span: auto
+        placeholder: ''
+        default: ''
+        cssClass: ''
+        type: text
+    content:
+        label: 'eduzoneco.management::lang.lesson.form.content'
+        size: huge
+        span: full
+        type: richeditor
+    is_active: 
+        label: 'eduzoneco.management::lang.general.is_active'
+        span: auto
+        type: switch
+    

@@ -1,0 +1,12 @@
+list: $/eduzoneco/management/models/lesson/columns.yaml
+modelClass: Eduzoneco\Management\Models\Lesson
+title: Lessons
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'eduzoneco/management/lessons/update/:id'
