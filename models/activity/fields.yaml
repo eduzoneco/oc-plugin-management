@@ -1,12 +1,15 @@
 fields:
-    lesson_id:
-        label: 'eduzoneco.management::lang.activity.form.lesson_id'
+    lesson:
+        label: 'eduzoneco.management::lang.activity.form.lesson_label'
         span: auto
-        type: number
+        type: relation
+        placeholder: 'eduzoneco.management::lang.activity.form.lesson_placeholder'
+        select: title
     type:
         label: 'eduzoneco.management::lang.activity.form.type'
         span: auto
-        type: text
+        type: dropdown
+        placeholder: 'eduzoneco.management::lang.activity.form.type_placeholder'
     title:
         label: 'eduzoneco.management::lang.activity.form.title'
         span: auto
@@ -19,7 +22,9 @@ fields:
     difficulty:
         label: 'eduzoneco.management::lang.activity.form.difficulty'
         span: auto
-        type: text
+        type: number
+        min: 1
+        max: 10
     estimated_duration:
         label: 'eduzoneco.management::lang.activity.form.estimated_duration'
         span: auto
@@ -27,4 +32,4 @@ fields:
     is_active:
         label: 'eduzoneco.management::lang.activity.form.is_active'
         span: auto
-        type: checkbox
+        type: switch

@@ -7,8 +7,8 @@
         'parent' => 'E-learning',
         'coursecategory' => 'Course Category',
         'lesson' => 'Lesson :)',
-        'activity' => 'Activity'
-        'course' => 'Course',
+        'activity' => 'Activity',
+        'course' => 'Course'
     ],
     'general' =>[
         'created_at' => 'Created at',
@@ -30,9 +30,11 @@
     ],
     'activity' => [
         'form' => [
-            'lesson_id'=> 'Lesson Id',
+            'lesson_label'=> 'Lesson Title',
+            'lesson_placeholder'=> 'Select Title',
             'type'=> 'Type',
             'title'=> 'Title',
+            'type_placeholder'=> 'Select type',
             'description'=> 'Description',
             'difficulty'=> 'Difficulty',
             'estimated_duration'=> 'Estimated Duration',
@@ -41,7 +43,7 @@
         ],
         'list' =>[
             'id'=> 'Id',
-            'lesson_id'=> 'Lesson Id',
+            'lesson_id'=> 'Lesson',
             'type'=> 'Type',
             'title'=> 'Title',
             'description'=> 'Description',

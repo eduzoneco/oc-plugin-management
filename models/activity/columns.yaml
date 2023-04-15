@@ -1,10 +1,7 @@
 columns:
-    id:
-        label: 'eduzoneco.management::lang.activity.list.id'
-        type: number
-    lesson_id:
+    lesson[title]:
         label: 'eduzoneco.management::lang.activity.list.lesson_id'
-        type: number
+        type: text
     type:
         label: 'eduzoneco.management::lang.activity.list.type'
         type: text
@@ -23,13 +20,13 @@ columns:
         type: number
     is_active:
         label: 'eduzoneco.management::lang.activity.list.is_active'
-        type: text
+        type: switch
     created_at:
         label: 'eduzoneco.management::lang.general.created_at'
-        type: datetime
+        type: timesince
     updated_at:
         label: 'eduzoneco.management::lang.general.updated_at'
-        type: datetime
+        type: timesince
     deleted_at:
         label: 'eduzoneco.management::lang.general.deleted_at'
-        type: datetime
+        type: timesince

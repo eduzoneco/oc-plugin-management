@@ -24,4 +24,15 @@ class Activity extends Model
      */
     public $rules = [
     ];
+    public $belongsTo = [
+        'lesson' => [\Eduzoneco\Management\Models\Lesson::class]
+    ];
+
+    public function getTypeOptions(){
+        return [
+            'lecture' => 'Lecture',
+            'quiz' => 'Quiz',
+            'exam' => 'Exam',
+        ];
+    }
 }
