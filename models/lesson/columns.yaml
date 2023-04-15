@@ -1,4 +1,7 @@
 columns:
+    course[name]:
+        label: 'eduzoneco.management::lang.lesson.form.course_label'
+        type: text
     title:
         label: 'eduzoneco.management::lang.lesson.list.title'
         type: text
