@@ -1,0 +1,12 @@
+list: $/eduzoneco/management/models/activity/columns.yaml
+modelClass: Eduzoneco\Management\Models\Activity
+title: Activities
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'eduzoneco/management/activities/update/:id'
