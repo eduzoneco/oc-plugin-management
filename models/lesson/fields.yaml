@@ -1,11 +1,15 @@
 fields:
+    course:
+        label: 'eduzoneco.management::lang.lesson.form.course_label'
+        type: relation
+        placeholder: 'eduzoneco.management::lang.lesson.form.course_placeholder'
     title:
         label: 'eduzoneco.management::lang.lesson.form.title'
         span: auto
         type: text
     description:
         label: 'eduzoneco.management::lang.lesson.form.description'
-        span: full
+        span: auto
         placeholder: ''
         default: ''
         cssClass: ''
@@ -14,11 +18,9 @@ fields:
         label: 'eduzoneco.management::lang.lesson.form.content'
         size: huge
         span: full
-        type: textarea
-    is_active:
-        label: 'Is active'
+        type: richeditor
+    is_active: 
+        label: 'eduzoneco.management::lang.general.is_active'
         span: auto
-        type: checkbox
-    course:
-        label: Categories
-        type: relation
+        type: switch
+    

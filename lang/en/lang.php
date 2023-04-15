@@ -31,13 +31,14 @@
     'lesson' => [
         'form' => [
             'id' => 'Id',
-            'courseid'=> 'Course ID Lesson',
             'title'=> 'Title Lesson',
             'description'=> 'Description Lesson',
-            'content'=> 'Content Lesson'
+            'content'=> 'Content Lesson',
+            'course_label'=> 'Course',
+            'course_placeholder'=> 'select a course!!'
         ],
         'list' =>[
-            'courseidl' => 'Course ID',
+            'courseid' => 'Course ID',
             'id' => 'Id',
             'title' => 'Title',
             'description' => 'Description',

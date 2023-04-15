@@ -1,7 +1,4 @@
 columns:
-    id:
-        label: 'eduzoneco.management::lang.lesson.list.id'
-        type: number
     title:
         label: 'eduzoneco.management::lang.lesson.list.title'
         type: text
@@ -11,16 +8,19 @@ columns:
         type: text
     content:
         label: 'eduzoneco.management::lang.lesson.list.content'
-        type: text
+        #type: text
+        type: summary
+        limitWords: 20
+        endChars: "..."
     is_active:
         label: 'eduzoneco.management::lang.general.is_active'
-        type: text
+        type: switch
     created_at:
         label: 'eduzoneco.management::lang.general.created_at'
-        type: datetime
+        type: timesince
     updated_at:
         label: 'eduzoneco.management::lang.general.updated_at'
-        type: datetime
+        type: timesince
     deleted_at:
         label: 'eduzoneco.management::lang.general.deleted_at'
-        type: datetime
+        type: timesince

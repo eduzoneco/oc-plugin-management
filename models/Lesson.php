@@ -24,7 +24,7 @@ class Lesson extends Model
      */
     public $rules = [
     ];
-    public $belongsTo = [
-        'course' => [\eduzoneco\management\models\Course::class,'key'=>'course_id']
+    public $belongsTo = [//va a buscar modelo en este caso course y _id
+        'course' => [\eduzoneco\management\models\Course::class]
     ];
 }
