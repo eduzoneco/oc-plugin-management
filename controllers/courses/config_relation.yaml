@@ -1,0 +1,9 @@
+# config_relation.yaml
+lessons:
+    label: 'eduzoneco.management::lang.course.config_relation.lessons.label'
+    view:
+        list: $/eduzoneco/management/models/course/columns_lesson.yaml
+        toolbarButtons: create|delete
+        recordsPerPage: 10
+    manage:
+        form: $/eduzoneco/management/models/lesson/fields.yaml

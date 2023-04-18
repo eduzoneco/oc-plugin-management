@@ -23,6 +23,8 @@ class Course extends Model
      * @var array Validation rules
      */
     public $rules = [
+        'name' => 'required',
+        'description' => 'required'
     ];
 
     public $belongsToMany = [
@@ -32,5 +34,8 @@ class Course extends Model
             'key'=>'course_id',
             'otherKey'=>'coursecategory_id'
             ]
+    ];
+    public $hasMany = [//va a buscar modelo en este caso course y _id
+        'lessons' => [\eduzoneco\management\models\Lesson::class]
     ];
 }
