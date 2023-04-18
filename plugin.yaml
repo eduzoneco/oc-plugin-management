@@ -10,10 +10,6 @@ navigation:
         url: /
         icon: icon-book
         sideMenu:
-            coursecategory:
-                label: 'eduzoneco.management::lang.navigation.coursecategory'
-                url: eduzoneco/management/coursecategories
-                icon: icon-sitemap
             course:
                 label: 'eduzoneco.management::lang.navigation.course'
                 url: eduzoneco/management/courses
@@ -26,3 +22,7 @@ navigation:
                 label: 'eduzoneco.management::lang.navigation.activity'
                 url: eduzoneco/management/activities
                 icon: icon-list-alt
+            coursecategory:
+                label: 'eduzoneco.management::lang.navigation.coursecategory'
+                url: eduzoneco/management/coursecategories
+                icon: icon-cogs   

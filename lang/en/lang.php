@@ -68,6 +68,28 @@
             'description' => 'Description',
             'content'=> 'Content'
         ]
-    ]
+    ],
+    'course' => [
+        'form' => [
+            'id' => 'Id',
+            'name'=> 'Name',
+            'description'=> 'Description',
+            'coursecategories'=> 'Categories',
+            'lessons'=> 'Lessons'
+        ],
+        'list' =>[
+            'id' => 'Id',
+            'name'=> 'Name',
+            'description'=> 'Description Lesson'
+        ],
+        'config_relation' =>[
+            'lessons' => [
+                'label' => 'Lesson'
+            ],
+        ]
+
+    ],
+
+
 
 ];

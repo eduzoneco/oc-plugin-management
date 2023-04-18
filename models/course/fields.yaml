@@ -1,16 +1,24 @@
 fields:
     name:
-        label: Name
-        span: left
+        label: 'eduzoneco.management::lang.course.form.name'
+        span: row
         type: text
-    description:
-        label: Description
-        span: auto
-        type: text
-    is_active:
-        label: 'Is active'
-        span: full
-        type: checkbox
+        spanClass: col-6
+        validation: required
     coursecategories:
-        label: Categories
+        label: 'eduzoneco.management::lang.course.form.coursecategories'
+        type: relation
+        span: row
+        spanClass: col-6
+    description:
+        label: 'eduzoneco.management::lang.course.form.description'
+        span: auto
+        type: textarea
+        validation: required
+    is_active:
+        label: 'eduzoneco.management::lang.general.is_active'
+        span: full
+        type: switch
+    lessons:
+        label: 'eduzoneco.management::lang.course.form.lessons'
         type: relation
