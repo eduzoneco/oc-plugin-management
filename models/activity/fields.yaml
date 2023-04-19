@@ -16,8 +16,13 @@ fields:
         type: text
     difficulty:
         label: 'eduzoneco.management::lang.activity.form.difficulty'
-        span: right
-        type: dropdown
+        type: balloon-selector
+        span: auto
+        default: med
+        options:
+            low: Low
+            med: Medium
+            high: High
         placeholder: 'eduzoneco.management::lang.activity.form.difficulty_placeholder'
     description:
         label: 'eduzoneco.management::lang.activity.form.description'

@@ -23,6 +23,10 @@ class Activity extends Model
      * @var array Validation rules
      */
     public $rules = [
+        'type' => 'required',
+        'lesson' => 'required',
+        'title' => 'required',
+        'description' => 'required'
     ];
     public $belongsTo = [
         'lesson' => [\Eduzoneco\Management\Models\Lesson::class]
@@ -33,13 +37,6 @@ class Activity extends Model
             'lecture' => 'Lecture',
             'quiz' => 'Quiz',
             'exam' => 'Exam',
-        ];
-    }
-    public function getDifficultyOptions(){
-        return [
-            'low' => 'Low',
-            'med' => 'Medium',
-            'high' => 'High',
         ];
     }
 }
