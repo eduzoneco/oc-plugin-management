@@ -1,0 +1,8 @@
+activities:
+    label: 'eduzoneco.management::lang.lesson.config_relation.activities.label'
+    view:
+        list: $/eduzoneco/management/models/lesson/columns_activity.yaml
+        toolbarButtons: create|delete
+        recordsPerPage: 10
+    manage:
+        form: $/eduzoneco/management/models/activity/fields.yaml

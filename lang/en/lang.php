@@ -35,6 +35,7 @@
             'type'=> 'Type',
             'title'=> 'Title',
             'type_placeholder'=> 'Select type',
+            'difficulty_placeholder'=> 'Select difficulty...',
             'description'=> 'Description',
             'difficulty'=> 'Difficulty',
             'estimated_duration'=> 'Estimated Duration',
@@ -67,6 +68,11 @@
             'title' => 'Title',
             'description' => 'Description',
             'content'=> 'Content'
+        ],
+        'config_relation' =>[
+            'activities' => [
+                'label' => 'Activity'
+            ],
         ]
     ],
     'course' => [

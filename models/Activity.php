@@ -35,4 +35,11 @@ class Activity extends Model
             'exam' => 'Exam',
         ];
     }
+    public function getDifficultyOptions(){
+        return [
+            'low' => 'Low',
+            'med' => 'Medium',
+            'high' => 'High',
+        ];
+    }
 }
