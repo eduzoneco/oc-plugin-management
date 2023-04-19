@@ -17,4 +17,7 @@
     - create_table_eduzoneco_management_courses_coursecategories.php
 1.0.7:
     - 'Created table eduzoneco_management_courses_users'
-    - create_table_eduzoneco_management_courses_users.php    
+    - create_table_eduzoneco_management_courses_users.php
+1.0.8:
+    - 'Updated table eduzoneco_management_lessons'
+    - builder_table_update_eduzoneco_management_lessons.php
