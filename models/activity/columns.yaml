@@ -1,7 +1,4 @@
 columns:
-    lesson[title]:
-        label: 'eduzoneco.management::lang.activity.list.lesson_id'
-        type: text
     type:
         label: 'eduzoneco.management::lang.activity.list.type'
         type: text
@@ -9,9 +6,14 @@ columns:
         label: 'eduzoneco.management::lang.activity.list.title'
         type: text
         searchable: true
+    lesson[title]:
+        label: 'eduzoneco.management::lang.activity.list.lesson_id'
+        type: text
     description:
         label: 'eduzoneco.management::lang.activity.list.description'
-        type: text
+        type: summary
+        limitWords: 5
+        endChars: "..."
     difficulty:
         label: 'eduzoneco.management::lang.activity.list.difficulty'
         type: text

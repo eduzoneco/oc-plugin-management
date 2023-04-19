@@ -1,35 +1,34 @@
 fields:
+    type:
+        label: 'eduzoneco.management::lang.activity.form.type'
+        span: auto
+        type: dropdown
+        placeholder: 'eduzoneco.management::lang.activity.form.type_placeholder'
     lesson:
         label: 'eduzoneco.management::lang.activity.form.lesson_label'
         span: auto
         type: relation
         placeholder: 'eduzoneco.management::lang.activity.form.lesson_placeholder'
         select: title
-    type:
-        label: 'eduzoneco.management::lang.activity.form.type'
-        span: auto
-        type: dropdown
-        placeholder: 'eduzoneco.management::lang.activity.form.type_placeholder'
     title:
         label: 'eduzoneco.management::lang.activity.form.title'
         span: auto
         type: text
-    description:
-        label: 'eduzoneco.management::lang.activity.form.description'
-        size: ''
-        span: full
-        type: textarea
     difficulty:
         label: 'eduzoneco.management::lang.activity.form.difficulty'
-        span: auto
-        type: number
-        min: 1
-        max: 10
+        span: right
+        type: dropdown
+        placeholder: 'eduzoneco.management::lang.activity.form.difficulty_placeholder'
+    description:
+        label: 'eduzoneco.management::lang.activity.form.description'
+        size: huge
+        span: full
+        type: richeditor
     estimated_duration:
         label: 'eduzoneco.management::lang.activity.form.estimated_duration'
         span: auto
         type: number
     is_active:
         label: 'eduzoneco.management::lang.activity.form.is_active'
-        span: auto
+        span: full
         type: switch

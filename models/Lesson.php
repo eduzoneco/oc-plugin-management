@@ -27,4 +27,8 @@ class Lesson extends Model
     public $belongsTo = [//va a buscar modelo en este caso course y _id
         'course' => [\eduzoneco\management\models\Course::class]
     ];
+    public $hasMany = [
+        'activities' => [\eduzoneco\management\models\Activity::class]
+    ];
+    
 }
