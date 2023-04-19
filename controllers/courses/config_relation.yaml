@@ -7,3 +7,6 @@ lessons:
         recordsPerPage: 10
     manage:
         form: $/eduzoneco/management/models/lesson/fields.yaml
+    structure:
+        showReorder: true
+        showTree: false
