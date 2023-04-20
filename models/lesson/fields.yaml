@@ -3,12 +3,10 @@ fields:
         label: 'eduzoneco.management::lang.lesson.form.course_label'
         type: relation
         placeholder: 'eduzoneco.management::lang.lesson.form.course_placeholder'
-        validation: required
     title:
         label: 'eduzoneco.management::lang.lesson.form.title'
         span: auto
         type: text
-        validation: required
     description:
         label: 'eduzoneco.management::lang.lesson.form.description'
         span: auto
@@ -16,13 +14,11 @@ fields:
         default: ''
         cssClass: ''
         type: text
-        validation: required
     content:
         label: 'eduzoneco.management::lang.lesson.form.content'
         size: huge
         span: full
         type: richeditor
-        validation: required
     is_active: 
         label: 'eduzoneco.management::lang.general.is_active'
         span: auto
