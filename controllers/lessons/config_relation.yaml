@@ -6,3 +6,6 @@ activities:
         recordsPerPage: 10
     manage:
         form: $/eduzoneco/management/models/activity/fields.yaml
+    structure:
+        showReorder: true
+        showTree: false

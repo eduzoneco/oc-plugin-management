@@ -4,7 +4,7 @@ fields:
         span: row
         type: text
         spanClass: col-6
-        validation: required
+        translatable: true
     coursecategories:
         label: 'eduzoneco.management::lang.course.form.coursecategories'
         type: relation
