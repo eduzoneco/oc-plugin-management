@@ -4,16 +4,19 @@ fields:
         span: auto
         type: dropdown
         placeholder: 'eduzoneco.management::lang.activity.form.type_placeholder'
+        translatable: true
     lesson:
         label: 'eduzoneco.management::lang.activity.form.lesson_label'
         span: auto
         type: relation
         placeholder: 'eduzoneco.management::lang.activity.form.lesson_placeholder'
         select: title
+        translatable: true
     title:
         label: 'eduzoneco.management::lang.activity.form.title'
         span: auto
         type: text
+        translatable: true
     difficulty:
         label: 'eduzoneco.management::lang.activity.form.difficulty'
         type: balloon-selector
@@ -24,11 +27,13 @@ fields:
             med: Medium
             high: High
         placeholder: 'eduzoneco.management::lang.activity.form.difficulty_placeholder'
+        translatable: true
     description:
         label: 'eduzoneco.management::lang.activity.form.description'
         size: huge
         span: full
         type: richeditor
+        translatable: true
     estimated_duration:
         label: 'eduzoneco.management::lang.activity.form.estimated_duration'
         span: auto
