@@ -39,4 +39,9 @@ class Activity extends Model
             'exam' => 'Exam',
         ];
     }
+    public $implement = [
+        \RainLab\Translate\Behaviors\TranslatableModel::class
+    ];
+
+    public $translatable = ['type', 'lesson', 'title', 'difficulty', 'description'];
 }

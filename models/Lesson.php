@@ -34,5 +34,10 @@ class Lesson extends Model
     public $hasMany = [
         'activities' => [\eduzoneco\management\models\Activity::class]
     ];
+    public $implement = [
+        \RainLab\Translate\Behaviors\TranslatableModel::class
+    ];
+
+    public $translatable = ['course', 'title', 'description', 'content'];
     
 }
