@@ -26,8 +26,7 @@ class Lesson extends Model
         'course' => 'required',
         'title' => 'required',
         'description' => 'required',
-        'content' => 'required',
-        'is_active' => 'required'
+        'content' => 'required'
     ];
     public $belongsTo = [//va a buscar modelo en este caso course y _id
         'course' => [\eduzoneco\management\models\Course::class]
