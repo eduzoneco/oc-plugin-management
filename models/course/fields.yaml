@@ -1,4 +1,8 @@
 fields:
+    card_image:
+        label: Cardimage
+        type: fileupload
+        mode: image
     name:
         label: 'eduzoneco.management::lang.course.form.name'
         span: row

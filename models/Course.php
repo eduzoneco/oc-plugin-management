@@ -38,6 +38,9 @@ class Course extends Model
     public $hasMany = [//va a buscar modelo en este caso course y _id
         'lessons' => [\eduzoneco\management\models\Lesson::class]
     ];
+    public $attachOne = [
+        'card_image' => \System\Models\File::class
+    ];
 
     public $implement = [
         \RainLab\Translate\Behaviors\TranslatableModel::class
