@@ -1,5 +1,12 @@
-<p>This is the default markup for component CourseList</p>
 
-<small>You can delete this file if you want</small>
 
-{{abc}}
+    {% for course in courses %}
+    <a href="{{ 'portal/course'|page({ course_id: course.id }) }}">
+        <div class="" style="border: 3px solid black;">
+            <img src="{{ course.card_image.thumb(200,auto) }}"/>
+            {{course.name}}
+            {{course.description}}
+        </div>
+    </a>
+    {% endfor %}
+
