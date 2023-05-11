@@ -26,8 +26,8 @@ class CourseList extends ComponentBase
 
     }
     public function onRun(){
-        $courses = Course::all();//laravel 
-        $this->page['courses'] = $courses; //variable disponible en twig  para pasar a todas las paginas que tiene ese component
+        //$courses = Course::all();//laravel 
+        $this->page['courses'] = Course::where('is_active', 1)->get(); //variable disponible en twig  para pasar a todas las paginas que tiene ese component
     }
    
 }

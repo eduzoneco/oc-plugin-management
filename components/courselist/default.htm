@@ -1,5 +1,7 @@
 
 
+{% if courses|length > 0 %}
+
     {% for course in courses %}
     <a href="{{ 'portal/course'|page({ course_id: course.id }) }}">
         <div class="" style="border: 3px solid black;">
@@ -9,4 +11,13 @@
         </div>
     </a>
     {% endfor %}
+
+
+{% else %}
+
+    <h1>No tienes cursos disponibles en estos momentos </h1>
+
+{% endif %}
+
+
 
