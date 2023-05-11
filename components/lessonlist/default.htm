@@ -1,0 +1,17 @@
+
+{% if lessons %}
+
+    {% for lesson in lessons %}
+    <div class="" style="border: 3px solid black;">
+        {{lesson.title}}
+        {{lesson.description}}
+    </div>
+    {% endfor %}   
+
+{% else %}
+
+    {% do redirect('portal') %}
+
+{% endif %}
+
+ 
