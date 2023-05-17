@@ -95,7 +95,10 @@
         ]
 
     ],
-
-
-
+    'user' => [
+        'list' => [
+            'import' => 'Import',
+            'export' => 'Export'
+        ],
+    ],
 ];
