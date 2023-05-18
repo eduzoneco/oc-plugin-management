@@ -12,6 +12,13 @@ class Plugin extends PluginBase
         'RainLab.User',
     ];
 
+    public function boot(){
+        
+        $this->extendUserFrontEndModel();
+        $this->extendUserBackendForm();
+        $this->extendMenuItemRainlabUser();
+    }
+
     public function registerComponents()
     {
         return [
@@ -39,9 +46,6 @@ class Plugin extends PluginBase
     }
 
 
-    public function boot(){
-        $this->extendMenuItemRainlabUser();
-    }
 
     public function extendMenuItemRainlabUser() {
 
@@ -72,11 +76,6 @@ class Plugin extends PluginBase
             ]);
         });
 
-    }
-    public function boot(){
-        
-        $this->extendUserFrontEndModel();
-        $this->extendUserBackendForm();
     }
 
     public function extendUserFrontEndModel()

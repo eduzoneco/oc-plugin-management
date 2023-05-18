@@ -14,7 +14,7 @@ class BuilderTableCreateEduzonecoManagementActivities extends Migration
         $table->integer('lesson_id');
         $table->string('type')->nullable();
         $table->string('title')->nullable();
-        $table->string('description')->nullable();
+        $table->text('description')->nullable();
         $table->string('difficulty')->nullable();
         $table->integer('estimated_duration')->nullable();
         $table->boolean('is_active')->default(0);
