@@ -1,5 +1,5 @@
 <?php namespace Eduzoneco\Management\Components;
-
+use Auth;
 use Cms\Classes\ComponentBase;
 use Eduzoneco\Management\Models\Course;
 /**
@@ -27,7 +27,9 @@ class CourseList extends ComponentBase
     }
     public function onRun(){
         //$courses = Course::all();//laravel 
-        $this->page['courses'] = Course::where('is_active', 1)->get(); //variable disponible en twig  para pasar a todas las paginas que tiene ese component
+        //$this->page['courses'] = Course::where('is_active', 1)->get(); //variable disponible en twig  para pasar a todas las paginas que tiene ese component
+        $user = Auth::user(); // Obtener el usuario autenticado
+        $this->page['courses'] = $user->courses()->where('is_active', 1)->get();
     }
    
 }

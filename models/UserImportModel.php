@@ -47,7 +47,7 @@ class UserImportModel extends ImportModel
                 $user->save();
 
                 // activate user (it sends welcome email)
-                // $user->attemptActivation($user->activation_code);
+                $user->attemptActivation($user->activation_code);
 
                 $this->logCreated();
 

@@ -8,7 +8,9 @@ columns:
         searchable: true
     description:
         label: 'eduzoneco.management::lang.activity.list.description'
-        type: text
+        type: summary
+        limitWords: 5
+        endChars: "..."
     difficulty:
         label: 'eduzoneco.management::lang.activity.list.difficulty'
         type: text
