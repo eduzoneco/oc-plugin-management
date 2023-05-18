@@ -3,6 +3,7 @@
 use System\Classes\PluginBase;
 use Event;
 use Backend;
+use RainLab\User\Models\User as UserFrontEndModel;
 
 class Plugin extends PluginBase
 {
@@ -15,6 +16,7 @@ class Plugin extends PluginBase
     {
         return [
             \Eduzoneco\Management\Components\CourseList::class => 'CourseList',
+            \Eduzoneco\Management\Components\LessonList::class => 'LessonList',
         ];
     }
 
@@ -70,5 +72,51 @@ class Plugin extends PluginBase
             ]);
         });
 
+    }
+    public function boot(){
+        
+        $this->extendUserFrontEndModel();
+        $this->extendUserBackendForm();
+    }
+
+    public function extendUserFrontEndModel()
+    {
+        UserFrontEndModel::extend(function($model){
+            $model->belongsToMany['courses'] = [
+                'Eduzoneco\Management\Models\Course',
+                'table' => 'eduzoneco_management_courses_users',
+            ];
+        });
+    }
+
+    public function extendUserBackendForm()
+    {
+        // Extend all backend form usage
+        Event::listen('backend.form.extendFields', function($widget) {
+            // Only apply this listener when the Users controller is being used
+            if (!$widget->getController() instanceof \RainLab\User\Controllers\Users) {
+                return;
+            }
+
+            // Only apply this listener when the User model is being modified
+            if (!$widget->model instanceof \RainLab\User\Models\User) {
+                return;
+            }
+
+            // Only apply this listener when the Form widget in question is a root-level
+            // Form widget (not a repeater, nestedform, etc)
+            if ($widget->isNested) {
+                return;
+            }
+
+            // Add Extrafield Users and courses
+            $widget->addFields([
+                'courses' => [
+                    'label' => 'List of Courses',
+                    'type' => 'relation',
+                    'span' => 'auto',  
+                ]
+            ]);
+        });
     }
 }
