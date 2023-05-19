@@ -7,6 +7,8 @@ import:
     modelClass: Eduzoneco\Management\Models\UserImportModel
     list: $/eduzoneco/management/models/userimport/columns.yaml
     redirect: rainlab/user/users
+    form: $/eduzoneco/management/models/userimport/fields.yaml
+
 
 export:
     title: Export Users
