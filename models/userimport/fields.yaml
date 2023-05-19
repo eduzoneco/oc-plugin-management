@@ -1,0 +1,5 @@
+fields:
+    classes:
+      type: checkboxlist
+      quickselect: true
+      optionsMethod: getClassList

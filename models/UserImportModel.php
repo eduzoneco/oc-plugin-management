@@ -3,6 +3,7 @@
 use Backend\Models\ImportModel;
 use Media\Classes\MediaLibrary;
 use System\Models\File;
+use Eduzoneco\Management\Models\Course;
 use RainLab\Location\Models\State;
 use RainLab\User\Models\User;
 
@@ -46,6 +47,16 @@ class UserImportModel extends ImportModel
                 // save user
                 $user->save();
 
+                // attach user to the selected classes
+                if (!empty($_POST["ImportOptions"]["classes"])) {
+                    $courseIds = $_POST["ImportOptions"]["classes"];
+                
+                    $courses = Course::whereIn('id', $courseIds)->get();
+                
+                    $user->courses()->attach($courses);
+                }
+                
+
                 // activate user (it sends welcome email)
                 $user->attemptActivation($user->activation_code);
 
@@ -55,6 +66,22 @@ class UserImportModel extends ImportModel
                 $this->logError($row, $ex->getMessage());
             }
         }
+    }
+
+
+    public function getClassesOptions() {
+        return $courses = Course::orderBy('is_active', 'desc')
+                ->orderBy('name')
+                ->get()
+                ->map(function ($course) {
+                    $name = $course->name;
+                    if ($course->is_active == 0) {
+                        $name .= ' (Inactive)';
+                    }
+                    return ['id' => $course->id, 'name' => $name];
+                })
+                ->pluck('name', 'id')
+                ->toArray();
     }
 
     /**
