@@ -24,6 +24,7 @@ class Plugin extends PluginBase
         return [
             \Eduzoneco\Management\Components\CourseList::class => 'CourseList',
             \Eduzoneco\Management\Components\LessonList::class => 'LessonList',
+            \Eduzoneco\Management\Components\ActivityList::class => 'ActivityList',
         ];
     }
 

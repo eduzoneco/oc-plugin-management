@@ -1,23 +1,32 @@
-
+<style>
+.frame{
+  height: 150px;
+  text-align: center;
+  margin: 1em 0;
+}
+.helper{
+display: inline-block;
+height: 100%;
+vertical-align: middle;
+}
+</style>
 
 {% if courses|length > 0 %}
-
+<div class="container d-flex gap-4 pb-5" >
     {% for course in courses %}
-    <a href="{{ 'portal/course'|page({ course_id: course.id }) }}">
-        <div class="" style="border: 3px solid black;">
-            <img src="{{ course.card_image.thumb(200,auto) }}"/>
-            {{course.name}}
-            {{course.description}}
+      <div class="card" style="width: 18rem;">
+        <div class="frame">
+         <span class="helper" style=""></span> <img src="{{ course.card_image.thumb(200,auto) }}" style="max-height:150px;width: max-content;align-self: center;padding-top: 10px" class="card-img-top" alt="...">
         </div>
-    </a>
+        
+        <div class="card-body">
+          <h5 class="card-title"> {{course.name}}</h5>
+          <p class="card-text">{{course.description}}</p>
+          <a href="{{ 'portal/course'|page({ course_id: course.id }) }}" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
     {% endfor %}
-
-
+</div>
 {% else %}
-
     <h1>No tienes cursos disponibles en estos momentos </h1>
-
 {% endif %}
-
-
-

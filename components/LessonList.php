@@ -28,11 +28,14 @@ class LessonList extends ComponentBase
     }
 
     public function onRender(){
+      
         //$properties = $this->getProperties();
         $courseId = $this->property('courseId');
         $course = Course::where('id', '=', $courseId)->first();
         if ($course && $course->is_active == 1)
         {
+            
+
             $lessons = $course->lessons;
             //$lessons = Lesson::where('course_id', '=', $courseId)->get();
             $this->page['lessons'] = $lessons;
