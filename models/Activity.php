@@ -32,6 +32,14 @@ class Activity extends Model
         'lesson' => [\Eduzoneco\Management\Models\Lesson::class]
     ];
 
+    public $attachOne = [
+        'video' => \System\Models\File::class
+    ];
+
+    public $attachMany = [
+        'files' => \System\Models\File::class
+    ];
+
     public function getTypeOptions(){
         return [
             'lecture' => 'Lecture',

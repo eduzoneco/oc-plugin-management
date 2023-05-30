@@ -43,6 +43,7 @@ class ActivityDetail extends ComponentBase
             // $firstActivity = $firstLesson->activities->first();
             // $this->page['activity'] = $firstLesson->activities->first();
             $this->page['lessons'] = $lessons;
+            $this->page['course'] = $course;
         }
 
 

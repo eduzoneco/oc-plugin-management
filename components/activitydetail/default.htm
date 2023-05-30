@@ -1,3 +1,16 @@
 <div id="result">
-    {% partial __SELF__ ~ '::lecture_without_video' %}
+    {% if activity %} 
+        {% if activity.type == 'lecture' %}    
+            {% partial __SELF__ ~ '::lecture' %} 
+        {% elseif activity.type == 'quiz' %}
+            {% partial __SELF__ ~ '::quiz' %} 
+        {% endif %}
+    {% else %} 
+        {% partial __SELF__ ~ '::introduction' %}         
+    {% endif %}
+
+
+
+
+    <!-- SELF es para ingresar a un archivo de su misma carpeta -->
 </div>
