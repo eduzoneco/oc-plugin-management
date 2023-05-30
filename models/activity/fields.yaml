@@ -34,6 +34,18 @@ fields:
         span: full
         type: richeditor
         translatable: true
+    video:
+        label: 'eduzoneco.management::lang.activity.form.video'
+        size: huge
+        span: full
+        mode: file
+        type: fileupload
+    files:
+        label: 'eduzoneco.management::lang.activity.form.files'
+        size: huge
+        span: full
+        mode: file
+        type: fileupload
     estimated_duration:
         label: 'eduzoneco.management::lang.activity.form.estimated_duration'
         span: auto
@@ -42,3 +54,4 @@ fields:
         label: 'eduzoneco.management::lang.activity.form.is_active'
         span: full
         type: switch
+
