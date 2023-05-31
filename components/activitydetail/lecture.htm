@@ -6,10 +6,28 @@
             <source src="{{ activity.video.path }}" type="{{ activity.video.content_type }}">
             Your browser does not support the video tag.
         </video>
+        
     {% endif %}
-    <div>
-        {{ activity.description|raw }}
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Content</button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Files</button>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            {{ activity.description|raw }}
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            {% for file in activity.files %}
+             <a href="{{ file.path }}">{{ file.file_name }}</a>
+            {% endfor %}
+        </div>
+        
     </div>
+
 {% else %}
     <h1>Please select an activity at the right</h1>
 {% endif %}
+
